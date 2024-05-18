@@ -1,0 +1,27 @@
+.placeholder {
+  font-size: 4rem;
+}
+
+.projects {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: table;
+  width: 80%;
+}
+
+.project {
+  display: block;
+  margin-bottom: 60px;
+}
+
+.project img{
+  width: 480px;
+}
+
+.project h2{
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
