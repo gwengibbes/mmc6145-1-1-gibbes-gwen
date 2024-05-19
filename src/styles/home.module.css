@@ -1,13 +1,57 @@
+.root {
+  font-family: Avenir, Helvetica, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 .placeholder {
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+.textCenter {
+text-align: center;
+}
+
+header {
+display:table;
+width: 100%;
+}
+/* Apply this styling to the immediate children of the header (h1 and ul but not li) */
+header > * {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+header h1 {
+  display: table;
+  float: left;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+header ul {
+ list-style: none;
+ display: table;
+ float: right;
+}
+
+header ul li {
+  display: table-cell;
+  float: left; 
+  margin-right:20px;
+}
+
+.introText{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
 .projects {
   list-style: none;
-  padding: 0;
+  padding: 0 10px;
   margin: 0 auto;
   display: table;
-  width: 80%;
+  width: 500px;
 }
 
 .project {
@@ -24,4 +68,16 @@
   padding: 0;
   margin: 0;
   margin-top: 10px;
+}
+
+main {
+  padding: 0 10px;
+  margin: 0 auto;
+  display: table;
+  width: 500px;
+}
+
+.bodyText {
+  font-size: 18px;
+  line-height: 1.5em;
 }

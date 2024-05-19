@@ -1,29 +1,34 @@
 import Project from '../components/project'
 import styles from '../styles/home.module.css'
+import Header from '../components/header'
+import visualHeirarchyImage from '../../images/VisualHeirarchyProject.png'
+import magazineLayout1 from '../../images/MagazineLayout1.png'
+import styleGuideBrandIdentity1 from '../../images/StyleGuideBrandIdentity1.png'
 
 export default function Home() {
   return (
-    <main>
-      <h1 className={styles.placeholder}>Gwen Gibbes </h1>
-      <div>
-        Design | Web Design | Online Communication
-        Please scroll down to see some of my work. 
-      </div>
+    <div>
+      <Header/>
+      <main>
+        <h1 className={styles.textCenter}>Gwen Gibbes </h1>
+        <div className={styles.introText}>
+          Design | Web Design | Online Communication <br/>
+          Please scroll down to see some of my work. 
+        </div>
 
-      <ul className={styles.projects}>
-        <li>
-          <Project name="Visual Hierarchy" image="https://blog.masterofproject.com/wp-content/uploads/2019/10/project-plan-example-2.jpg"></Project>
-        </li>
-        <li>
-          <Project name="Magazine Layout" image="https://blog.masterofproject.com/wp-content/uploads/2019/10/project-plan-example-2.jpg" 
-               ></Project>
-        </li>
-        <li>
-          <Project name="Style Guide Brand Identity" image="https://blog.masterofproject.com/wp-content/uploads/2019/10/project-plan-example-2.jpg" 
-               ></Project>
-        </li>
-      </ul>
-
-    </main>
+        <ul className={styles.projects}>
+          <li className={styles.project}>
+            <Project name="Visual Hierarchy" image={visualHeirarchyImage}></Project>
+          </li>
+          <li className={styles.project}>
+            <Project name="Magazine Layout" image={magazineLayout1}
+                ></Project>
+          </li>
+          <li className={styles.project}>
+            <Project name="Style Guide Brand Identity" image={styleGuideBrandIdentity1}></Project>
+          </li>
+        </ul>
+      </main>
+    </div>
   )
 }
